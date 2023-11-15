@@ -37,11 +37,11 @@ console.log(health) // -> 90
 
 <script type="application/javascript">
     const runScript = () => {
-        let todaysWillpowerNeeded = 0
+        let todaysWillpowerNeeded = 99
         // some things need willpower
-        const cleaning = 10;
-        const work = 30;
-        const exercising = 40;
+        const cleaning = 1;
+        const work = 3;
+        const exercising = 4;
         // some things reduce willpower needed
         const tee = -10;
         const sweets = -5
@@ -50,8 +50,8 @@ console.log(health) // -> 90
         todaysWillpowerNeeded += cleaning
         todaysWillpowerNeeded += work
         todaysWillpowerNeeded += exercising
-        todaysWillpowerNeeded += tee * 2
-        todaysWillpowerNeeded += sweets * 2
+        todaysWillpowerNeeded += tee * 1
+        todaysWillpowerNeeded += sweets * 1
 
         document.getElementById("willpower").textContent = todaysWillpowerNeeded + ""
     };
